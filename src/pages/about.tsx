@@ -16,7 +16,7 @@ const About = () => (
       the full control over it. Only if you control your Zen Energy you can
       truly be happy. Once you have the control over it the world of success is
       in front of you, and only the sky is the limit. To make sure you do not
-      fall we will help you rise to success an find your true happiness for a
+      fall we will help you rise to success and find your true happiness for a
       small fee.
     </p>
   </Layout>

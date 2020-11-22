@@ -12,7 +12,11 @@ const ListLink = props => (
       textDecoration: 'none',
     }}
   >
-    <Link to={props.to} style={{ textDecoration: 'none' }}>
+    <Link
+      to={props.to}
+      style={{ textDecoration: 'none' }}
+      activeClassName={layoutStyles.active}
+    >
       {props.children}
     </Link>
   </li>
