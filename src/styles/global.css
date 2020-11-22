@@ -1,0 +1,30 @@
+html {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+a,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body {
+  font-family: 'Courier New';
+  color: black;
+}
