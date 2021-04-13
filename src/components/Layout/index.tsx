@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Link } from 'gatsby'
 // @ts-ignore
-import layoutStyles from './layout.module.css'
+import * as layoutStyles from './layout.module.css'
 
 const ListLink = props => (
   <li

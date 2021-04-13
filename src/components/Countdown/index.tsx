@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // @ts-ignore
-import countdownStyles from './countdown.module.css'
+import * as countdownStyles from './countdown.module.css'
 
 const intervalsLocale = {
   rs: {

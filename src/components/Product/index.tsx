@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 // @ts-ignore
-import productStyles from './product.module.css'
+import * as productStyles from './product.module.css'
 
 interface Props {
   title: string
