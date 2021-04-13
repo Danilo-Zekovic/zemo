@@ -1,0 +1,22 @@
+.countdown {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.countdown span {
+  font-size: 200%;
+  padding: 0 7px;
+}
+
+@media only screen and (max-width: 650px) {
+  .countdown {
+    flex-direction: column;
+  }
+}
+
+.language {
+  margin: 10px;
+  position: fixed;
+  right: 50%;
+}
