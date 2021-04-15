@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Confetti from 'react-confetti'
 // @ts-ignore
 import * as countdownStyles from './countdown.module.css'
 
@@ -64,14 +65,15 @@ const Countdown = ({ month, day }) => {
     }
 
     timerComponents.push(
-      <span>
+      <span key={interval}>
         {timeLeft[interval]} {intervalsLocale[locale][interval]}{" "}
       </span>
     );
   });
   return (
       <div className={countdownStyles.countdown}>
-        {timerComponents.length ? timerComponents : <span>Srećan rođendan!!!</span>}
+        {timerComponents.length ? timerComponents : <span><b>Srećan rođendan!!!</b></span>}
+        {!timerComponents.length && <Confetti />}
       </div>
   );
 }
