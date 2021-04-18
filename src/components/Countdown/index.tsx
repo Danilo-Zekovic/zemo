@@ -30,9 +30,13 @@ const Countdown = ({ month, day }) => {
 
   const calculateTimeLeft = () => {
     const today = new Date()
-    let year = getYear(today, month, day) 
+    let year = getYear(today, month, day)
+    // NOTE this does not work on Safari for some reason
+    // const targetDate = new Date(`${year}-${month}-${day}`)
+    const targetDate = new Date(year, month - 1, day)
     
-    const difference = +new Date(`${year}-${month}-${day}`) - +new Date();
+    const difference = +targetDate.getTime() - +today.getTime();
+
     let timeLeft = {};
 
     if (difference > 0) {
@@ -43,7 +47,7 @@ const Countdown = ({ month, day }) => {
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
-
+    
     return timeLeft;
   };
 
