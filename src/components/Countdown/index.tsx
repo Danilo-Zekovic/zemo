@@ -19,7 +19,7 @@ const intervalsLocale = {
 }
 
 const getYear = (today: Date, month: number, day: number) => {
-  if ((today.getMonth() + 1) <= month && today.getDate() <= day) {
+  if ((today.getMonth() + 1) <= month || ((today.getMonth() + 1) === month && today.getDate() <= day)) {
     return today.getFullYear()
   }
 
